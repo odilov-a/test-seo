@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import "fonts";
+@import "variables";
+@import "general";
+@import "normalize";
+@import "container";
+@import "not";
+.loader-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: clip !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcff;
+  z-index: 9999;
+}
+
+.loader-video.close {
+  display: none !important;
+}
+
+.intro-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: none;
+}
+
+.content.show {
+  display: block;
+}
+@media only screen and (max-width: 600px) {
+  .intro-video {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.ant-pagination-item-active {
+  border-radius: 50% !important;
+  border-color: #0E3F2A !important;
+
+  a {
+    color: #0E3F2A !important;
+  }
+}

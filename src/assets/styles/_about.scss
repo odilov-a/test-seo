@@ -1,0 +1,297 @@
+.about_page {
+  position: relative;
+  scroll-behavior: smooth;
+}
+.about_page_gif{
+  width: 100%;
+  border-radius: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: 180%;
+  overflow: hidden;
+  -webkit-border-radius: 20vw;
+  -moz-border-radius: 20vw;
+  -ms-border-radius: 20vw;
+  -o-border-radius: 20vw;
+  img, video {
+    object-fit: 280%;
+    pointer-events: none;
+    width: 100%;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+  }
+}
+.products_section {
+  margin: 0 3vw;
+  overflow-x: clip;
+  scroll-behavior: smooth !important;
+}
+.products_navbar {
+  text-wrap: nowrap;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.products_navbar_elements::-webkit-scrollbar {
+  height: 0;
+}
+.products_navbar_elements::-webkit-scrollbar-track {
+  background: #fff;
+}
+.products_navbar_elements::-webkit-scrollbar-thumb {
+  background: var(--gray-color-3);
+  border-radius: 5vw;
+  -webkit-border-radius: 5vw;
+  -moz-border-radius: 5vw;
+  -ms-border-radius: 5vw;
+  -o-border-radius: 5vw;
+}
+.products_navbar_elements::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color-1);
+}
+.products_navbar_elements {
+  background: var(--gray-color-1);
+  z-index: 20;
+  padding: 2vw 0vw 2vw 2vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 50%;
+  height: 5vw;
+  border-bottom: 0.05vw #1d4d3928 solid;
+}
+
+.products_navbar_element {
+  color: var(--secondary-color-1);
+  width: fit-content;
+  font-family: "Inter";
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2vw;
+  text-transform: uppercase;
+  opacity: 0.4;
+  margin-right: 1vw;
+  position: relative;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+    text-shadow: 1px 0 black;
+  }
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.product_active {
+  opacity: 1;
+  cursor: pointer;
+  text-shadow: 1px 0 black;
+  &::before {
+    width: 0.5vw;
+    height: 0.5vw;
+    position: absolute;
+    background: var(--primary-color);
+    content: " ";
+    bottom: 0;
+    left: 50%;
+    top: 1.5vw;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+.about_page_products {
+  margin-bottom: 2vw;
+  display: flex;
+  height: 90vh;
+  position: relative;
+  justify-content: space-between;
+  scroll-behavior: smooth !important;
+}
+.products_left {
+  background: var(--gray-color-1);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 4vw;
+  gap: 2vw;
+  justify-content: flex-end;
+  border-radius: 1vw;
+  -webkit-border-radius: 1vw;
+  -moz-border-radius: 1vw;
+  -ms-border-radius: 1vw;
+  -o-border-radius: 1vw;
+}
+.product_img {
+  
+  width: 45%;
+  height: 100%;
+  img {
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+// #first_product {
+//   position: absolute;
+//   right: 0;
+//   top: -4.8vw;
+//   height: 111%;
+// }
+.products_title {
+  color: var(--secondary-color-1);
+  font-family: "Inter";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.products_desc {
+  color: var(--secondary-color-1);
+  font-family: "Inter";
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2vw;
+}
+.products_left a {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5vw;
+  background: var(--secondary-color-2);
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+  color: var(--primary-color);
+  font-family: "Inter";
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1vw;
+  gap: 1vw;
+  width: fit-content;
+  svg {
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .products_navbar {
+    display: none;
+  }
+  .about_page_gif{
+    width: 100%;
+    height: 130vh;
+    border-radius: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: 180%;
+    overflow: hidden;
+    -webkit-border-radius: 20vw;
+    -moz-border-radius: 20vw;
+    -ms-border-radius: 20vw;
+    -o-border-radius: 20vw;
+    img, video {
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      transform: scale(1.4);
+      -webkit-transform: scale(1.4);
+      -moz-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      -o-transform: scale(1.4);
+    }
+  }
+  .about_page_products {
+    margin: 10vw 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 5vw;
+    height: 100%;
+  }
+  .products_left {
+    width: 100%;
+    border-radius: 4vw;
+    -webkit-border-radius: 4vw;
+    -moz-border-radius: 4vw;
+    -ms-border-radius: 4vw;
+    -o-border-radius: 4vw;
+  }
+  .product_img {
+    width: 100%;
+    height: 40vh;
+    img {
+      border-radius: 4vw;
+      -webkit-border-radius: 4vw;
+      -moz-border-radius: 4vw;
+      -ms-border-radius: 4vw;
+      -o-border-radius: 4vw;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  #first_product {
+    all: unset;
+  }
+  .products_title {
+    color: var(--secondary-color-1);
+    font-family: "Inter";
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10vw;
+  }
+  .products_desc {
+    color: var(--secondary-color-1);
+    font-family: "Inter";
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6vw;
+    margin-bottom: 10vw;
+  }
+  .products_left a {
+    display: flex;
+    align-items: center;
+    border-radius: 2vw;
+    background: var(--secondary-color-2);
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+    color: var(--primary-color);
+    font-family: "Inter";
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 3vw;
+    gap: 1vw;
+    width: fit-content;
+    svg {
+      width: 4vw;
+      height: 4vw;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+export { default as HeroBGLaptop } from "./hero-bg(laptop).webp";
+export { default as HeroBGTablet } from "./hero-bg(tablet).webp";
+export { default as HeroBGMobile } from "./hero-bg(mobile).webp";
+export { default as HeroIMGLaptop } from "./hero-img(laptop).webp";
+export { default as HeroIMGTablet } from "./hero-img(tablet).webp";
+export { default as HeroIMGMobile } from "./hero-img(mobile).webp";
+export { default as HomeIMG1Laptop } from "./home-img1(laptop).webp";
+export { default as HomeIMG1Tablet } from "./home-img1(tablet).webp";
+export { default as HomeIMG1Mobile } from "./home-img1(mobile).webp";
+export { default as HomeIMG2Laptop } from "./home-img2(laptop).webp";
+export { default as HomeIMG2Tablet } from "./home-img2(tablet).webp";
+export { default as HomeIMG2Mobile } from "./home-img2(mobile).webp";
+export { default as ExtractIMGLaptop } from "./extract-img(laptop).webp";
+export { default as ExtractIMGTablet } from "./extract-img(tablet).webp";
+export { default as ExtractIMGMobile } from "./extract-img(mobile).webp";
+export { default as Product1Laptop } from "./product-1(laptop).webp";
+export { default as Product1Tablet } from "./product-1(tablet).webp";
+export { default as Product1Mobile } from "./product-1(mobile).webp";
+export { default as Product2Laptop } from "./product-2(laptop).webp";
+export { default as Product2Tablet } from "./product-2(tablet).webp";
+export { default as Product2Mobile } from "./product-2(mobile).webp";
+export { default as Product3Laptop } from "./product-3(laptop).webp";
+export { default as Product3Tablet } from "./product-3(tablet).webp";
+export { default as Product3Mobile } from "./product-3(mobile).webp";
+export { default as Product4Laptop } from "./product-4(laptop).webp";
+export { default as Product4Tablet } from "./product-4(tablet).webp";
+export { default as Product4Mobile } from "./product-4(mobile).webp";
+export { default as Product5Laptop } from "./product-5(laptop).webp";
+export { default as Product5Tablet } from "./product-5(tablet).webp";
+export { default as Product5Mobile } from "./product-5(mobile).webp";
+export { default as Product6Laptop } from "./product-6(laptop).webp";
+export { default as Product6Tablet } from "./product-6(tablet).webp";
+export { default as Product6Mobile } from "./product-6(mobile).webp";
+export { default as Product7Laptop } from "./product-7(laptop).webp";
+export { default as Product7Tablet } from "./product-7(tablet).webp";
+export { default as Product7Mobile } from "./product-7(mobile).webp";
+export { default as Product8Laptop } from "./product-8(laptop).webp";
+export { default as Product8Tablet } from "./product-8(tablet).webp";
+export { default as Product8Mobile } from "./product-8(mobile).webp";
+export { default as LogoMobile } from "./logo(mobile).webp";
+export { default as LogoTablet } from "./logo(tablet).webp";
+export { default as LogoLaptop } from "./logo(laptop).webp";
+export { default as FirstSec1Laptop } from "./first-sec1(laptop).webp";
+export { default as FirstSec1Tablet } from "./first-sec1(tablet).webp";
+export { default as FirstSec1Mobile } from "./first-sec1(mobile).webp";
+export { default as VideoCoverLaptop } from "./video-cover(laptop).webp";
+export { default as VideoCoverTablet } from "./video-cover(tablet).webp";
+export { default as VideoCoverMobile } from "./video-cover(mobile).webp";
+export { default as GoalsFirstLaptop } from "./goals-first(laptop).webp";
+export { default as GoalsFirstTablet } from "./goals-first(tablet).webp";
+export { default as GoalsFirstMobile } from "./goals-first(mobile).webp";
+export { default as GoalsImg1tLaptop } from "./goals-img1(laptop).webp";
+export { default as GoalsImg1Tablet } from "./goals-img1(tablet).webp";
+export { default as GoalsImg1Mobile } from "./goals-img1(mobile).webp";
+export { default as GoalsImg2tLaptop } from "./goals-img2(laptop).webp";
+export { default as GoalsImg2Tablet } from "./goals-img2(tablet).webp";
+export { default as GoalsImg2Mobile } from "./goals-img2(mobile).webp";
+export { default as PartnersFirstLaptop } from "./partners-first(laptop).webp";
+export { default as PartnersFirstTablet } from "./partners-first(tablet).webp";
+export { default as PartnersFirstMobile } from "./partners-first(mobile).webp";
+export { default as NewsFirstLaptop } from "./news-first(laptop).webp";
+export { default as NewsFirstTablet } from "./news-first(tablet).webp";
+export { default as NewsFirstMobile } from "./news-first(mobile).webp";
+export { default as Loading } from "./loading.gif";
+
+export {default as mapUzbRu} from "./map_uzb(ru).mp4";
+export {default as mapUzbUz} from "./map_uzb(uz).mp4";
+export {default as mapUzbEn} from "./map_uzb(en).mp4";
+export {default as mapWorldRu} from "./map_world(ru).mp4";
+export {default as mapWorldUz} from "./map_world(uz).mp4";
+export {default as mapWorldEn} from "./map_world(en).mp4";
+export {default as productsUz} from "./products(uz).mp4";
+export {default as productsRu} from "./products(ru).mp4";
+export {default as productsEn} from "./products(en).mp4";
+export {default as productsResUz} from "./products_res(uz).mp4";
+export {default as productsResRu} from "./products_res(ru).mp4";
+export {default as productsResEn} from "./products_res(en).mp4";
+
+export {default as videoMain} from "./0501.mp4";
+
+
+
+
+

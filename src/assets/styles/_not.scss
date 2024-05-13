@@ -1,0 +1,73 @@
+.notfound-page {
+  position: relative;
+  padding: 0 5%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.notfound-page .gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    #50d873 50%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  height: 20px;
+  width: 100%;
+}
+.notfound-page .gradient:first-child {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.notfound-page .gradient:last-child {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.error-text {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 20vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(84deg, #50d873 1.86%, rgba(80, 216, 115, 0.02) 101.78%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.error-message {
+  color: var(--secondary-color-1);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; /* 150% */
+}
+.error-message-2 {
+  color: var(--secondary-color-1);
+  font-family: "Inter";
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.back-btn,
+.back-btn:hover {
+  display: inline-flex;
+  padding: 12px 18px 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--secondary-color-2);
+  color: var(--primary-color);
+  margin-top: 45px;
+}

@@ -1,0 +1,375 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.contact_page {
+  display: flex;
+  flex-direction: column;
+  margin: 3vw;
+  overflow-x: clip;
+  .active {
+    background: var(--primary-color) !important;
+    color: var(--Secondary-1) !important;
+  }
+}
+.contact_page_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_page-left {
+  display: flex;
+  flex-direction: column;
+  background: #fbfbfb;
+  width: 45%;
+  height: 45vw;
+  padding: 2vw;
+  border-radius: 2vw;
+  -webkit-border-radius: 2vw;
+  -moz-border-radius: 2vw;
+  -ms-border-radius: 2vw;
+  -o-border-radius: 2vw;
+}
+.contact_title {
+  color: #bbb;
+  font-family: "Inter";
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2vw;
+  text-transform: uppercase;
+  margin: 3vw 0 1vw 0;
+}
+.contact_li {
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  background: transparent !important;
+  gap: 1vw ;
+  margin-top: 1vw !important;
+  color: var(--secondary-color-1) !important;
+  font-family: "Inter";
+  font-size: 1.3vw !important;
+  line-height: normal !important;
+  font-style: normal !important;
+  font-weight: 400;
+  svg {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+.contact_page-right {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  border-radius: 2vw;
+  background: var(--secondary-color-2);
+  padding: 2vw;
+  -webkit-border-radius: 2vw;
+  -moz-border-radius: 2vw;
+  -ms-border-radius: 2vw;
+  -o-border-radius: 2vw;
+}
+.contact_page-right-title {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+form input,
+textarea {
+  color: #fff;
+  resize: none;
+  font-family: "Inter";
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: var(--secondary-color-1);
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+  padding: 1vw 1.3vw;
+  outline: none;
+  &::placeholder {
+    color: #bbbbbb72;
+  }
+}
+.contact_buttons {
+  display: flex;
+  border: 0.2px solid var(--Secondary-1, #1d4d39);
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+  padding: 0.4vw;
+  gap: 0.4vw;
+  margin: 2vw 0;
+}
+
+.contact_buttons button {
+  color: var(--primary-color);
+  font-family: "Inter";
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2vw;
+  border-radius: 0.8vw;
+  border: 0.1vw solid rgba(14, 63, 42, 0.5);
+  background: var(--Secondary-1, #1d4d39);
+  -webkit-border-radius: 0.8vw;
+  -moz-border-radius: 0.8vw;
+  -ms-border-radius: 0.8vw;
+  -o-border-radius: 0.8vw;
+  width: 50%;
+  height: 3vw;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color-1);
+  }
+}
+form .submit {
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--secondary-color-1);
+  font-family: "Inter";
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2vw;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+  gap: 1vw;
+  svg {
+    width: 1.2vw;
+    height: 1.2vw;
+    path {
+      fill: #1d4d39;
+    }
+  }
+}
+.diallers {
+  display: flex;
+  flex-direction: column;
+  max-height: 27vw;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0.3vw;
+    margin-left: 5vw;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: var(--Secondary-1, #1d4d39);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+  scroll-margin-left: 45px;
+}
+.dialler_name {
+  color: #fff;
+  width: 100%;
+  font-family: "Inter";
+  font-size: 1.4vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2vw;
+  padding: 1vw 0;
+  border-bottom: 1px solid #1d4d39ad;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .contact_page_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 4vw;
+  }
+  .contact_page-left {
+    background: #fbfbfb;
+    width: 100%;
+    padding: 4vw;
+    border-radius: 4vw;
+    -webkit-border-radius: 4vw;
+    -moz-border-radius: 4vw;
+    -ms-border-radius: 4vw;
+    -o-border-radius: 4vw;
+    gap: 2vw;
+  }
+  .contact_title {
+    color: #bbb;
+    font-size: 3vw;
+    margin: 5vw 0 4vw 0;
+  }
+  .contact_li {
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    background: transparent !important;
+    gap: 3vw ;
+    margin-top: 1vw !important;
+    color: var(--secondary-color-1) !important;
+    font-family: "Inter";
+    font-size: 5vw !important;
+    line-height: normal !important;
+    font-style: normal !important;
+    font-weight: 400;
+    svg {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+  .contact_link {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 2vw;
+    color: var(--secondary-color-1);
+    font-family: "Inter";
+    font-size: 5vw !important;
+    line-height: normal !important;
+    font-style: normal;
+    font-weight: 400;
+    svg {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+  .contact_page-right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 4vw;
+    background: var(--secondary-color-2);
+    padding: 4vw;
+    -webkit-border-radius: 4vw;
+    -moz-border-radius: 4vw;
+    -ms-border-radius: 4vw;
+    -o-border-radius: 4vw;
+  }
+  .contact_page-right-title {
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+  form input,
+  textarea {
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 2vw;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+    padding: 2vw 3vw;
+    outline: none;
+    &::placeholder {
+      color: #bbbbbb72;
+    }
+  }
+  .contact_buttons {
+    display: flex;
+    border: 0.2vw solid var(--Secondary-1, #1d4d39);
+    border-radius: 2vw;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+    padding: 0.4vw;
+    gap: 1vw;
+    margin: 2vw 0;
+  }
+
+  .contact_buttons button {
+    color: var(--primary-color);
+    font-family: "Inter";
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2vw;
+    border-radius: 2vw;
+    border: 0.1vw solid rgba(14, 63, 42, 0.5);
+    background: var(--Secondary-1, #1d4d39);
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+    width: 50%;
+    height: 8vw;
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--secondary-color-1);
+    }
+  }
+  form .submit {
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2vw;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    border-radius: 2vw;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+    gap: 1vw;
+    svg {
+      width: 4vw;
+      height: 4vw;
+      path {
+        fill: #1d4d39;
+      }
+    }
+  }
+  .dialler_name {
+    color: #fff;
+    width: 100%;
+    font-family: "Inter";
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
+    padding: 7vw 0;
+    border-bottom: 1px solid #1d4d39ad;
+    cursor: pointer;
+  }
+}
