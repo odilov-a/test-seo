@@ -126,6 +126,7 @@ const Goals = () => {
           name="description"
           content="Description of your about page."
         />
+        <link rel="canonical" href="https://test-seo-sigma.vercel.app/goals" />
       </Helmet>
       </div>
       <FirstSection
